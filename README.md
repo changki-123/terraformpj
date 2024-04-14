@@ -1,40 +1,39 @@
-<h1>zooTopic</h1>
-ZooTopic is a web service that automatically collects content from a variety of news sources and delivers it to users. This service provides up-to-date news, trends, and important event information quickly, helping users save time and effort.
+<h1>ZooTopic</h1>
+<p>ZooTopic automatically collects content from various news sources and delivers it to users. This service provides up-to-date news, trends, and important event information quickly, helping users save time and effort.</p>
 
-<h1>System Configuration</h1>
+<h1>System Configuration</h1><br>
 
 <h2>Data Crawling:</h2>
-
-Python: Utilizes Python along with libraries such as Pandas to automatically collect data from various news sources. These tools are powerful for parsing HTML from web pages and extracting the necessary data.
+<p>Python: Uses Python along with libraries like Pandas to automatically collect data from various news sources. These tools are powerful for parsing HTML from web pages and extracting necessary data.</p>
 
 <h2>Data Processing and Storage:</h2>
+<p>AWS Lambda: Implements serverless functions to process and refine crawled data. Lambda operates on an event-driven basis and is triggered after the crawling process to automate the workflow.</p>
+<p>AWS S3: Safely stores the refined data. S3 provides high durability and is ideal for backing up and archiving crawled news data.</p>
 
-AWS Lambda: Implements serverless functions to process and refine the crawled data. Lambda operates on an event-driven basis, triggered after the crawling process to automate the handling.
-AWS S3: Safely stores the refined data. S3 offers high durability and is ideal for backing up and archiving the crawled news data.
+<h2>Email and Event Scheduling:</h2>
+<p>Amazon EventBridge: Sets up event scheduling to send emails to subscribers every morning at 6 AM. EventBridge manages integration with AWS services and automates workflows based on events.</p>
+<p>Amazon SES (Simple Email Service): Implements a service to send news summaries via email to subscribers. SES allows for the reliable dispatch of bulk emails and also provides related email sending statistics.</p>
+<p>Amazon SQS: Uses SQS to manage and buffer email data to be sent via SES. SQS is a messaging queuing service that can handle and manage large volumes of messages reliably.</p>
 
-<h2>Website Deployment and Management:</h2>
-
-Amazon Route 53: Provides Domain Name System (DNS) services to manage the website’s domain and optimize traffic routing.
-Amazon CloudFront: A Content Delivery Network (CDN) service that delivers content quickly to users worldwide, useful for efficiently distributing both static and dynamic web content.
-
-<h2>Email Delivery Service:</h2>
-
-Amazon SES (Simple Email Service): Implements a service to send summarized news emails to subscribers every morning at 6 AM. SES allows for the reliable sending of mass emails and provides statistics related to email dispatching.
+<h2>Security and Performance Optimization:</h2>
+<p>Amazon Route 53: Provides Domain Name System (DNS) services to manage the website’s domain and optimize traffic routing.</p>
+<p>Amazon CloudFront: A Content Delivery Network (CDN) service that provides fast loading speeds to users worldwide, useful for efficiently distributing both static and dynamic web content.</p>
+<p>AWS WAF: Provides a web application firewall to protect the website from security threats. WAF detects and blocks attacks, enhancing the stability and security of the website.</p>
 
 <h2>Revenue Model</h2>
+<p>Subscription Service: Users can subscribe on a monthly or annual basis via the website. Subscribers receive summarized news in their email every morning at 6 AM, offering a more in-depth and ad-free experience compared to regular free content.</p>
+<p>This system provides a technologically sophisticated yet user-friendly service, representing a modern way to consume news content. Additionally, by leveraging the robust cloud infrastructure of AWS, it enables a scalable and easily manageable system.</p>
 
-Subscription Service: Users can subscribe monthly or annually via the website. Subscribers receive summarized news in their email every morning at 6 AM, offering a more in-depth and ad-free experience compared to regular free content.
-This system provides a technologically sophisticated yet user-friendly service, representing a modern way to consume news content. Additionally, by leveraging AWS's robust cloud infrastructure, it allows for a scalable and easily manageable system.
 
 <h1>Architecture</h1>
 <img src="image.png" alt="This is an image" />
 
-<hr>
+<br><br>
 
 <h1>ZooTopic</h1>
 <p>ZooTopic은 다양한 뉴스 소스에서 자동으로 콘텐츠를 수집(크롤링)하여 사용자에게 제공하는 웹사이트입니다. 이 서비스는 최신 뉴스, 트렌드, 중요 이벤트에 대한 정보를 신속하게 제공함으로써 사용자가 시간과 노력을 절약할 수 있도록 돕습니다.</p>
 
-<h1>시스템 구성</h1>
+<h1>시스템 구성</h1><br>
 
 <h2>데이터 크롤링:</h2>
 <p>Python: Python과 함께 Pandas 같은 라이브러리를 사용하여 다양한 뉴스 소스에서 데이터를 자동으로 수집합니다. 이러한 도구는 웹 페이지의 HTML을 파싱하고 필요한 데이터를 추출하는 데 강력합니다.</p>
