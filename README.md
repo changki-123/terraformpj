@@ -7,21 +7,21 @@ ZooTopic is a web service that automatically collects content from a variety of 
 
 Python: Utilizes Python along with libraries such as Pandas to automatically collect data from various news sources. These tools are powerful for parsing HTML from web pages and extracting the necessary data.
 
-<ul>Data Processing and Storage:</ul>
+<h2>Data Processing and Storage:</h2>
 
 AWS Lambda: Implements serverless functions to process and refine the crawled data. Lambda operates on an event-driven basis, triggered after the crawling process to automate the handling.
 AWS S3: Safely stores the refined data. S3 offers high durability and is ideal for backing up and archiving the crawled news data.
 
-<ul>Website Deployment and Management:</ul>
+<h2>Website Deployment and Management:</h2>
 
 Amazon Route 53: Provides Domain Name System (DNS) services to manage the website’s domain and optimize traffic routing.
 Amazon CloudFront: A Content Delivery Network (CDN) service that delivers content quickly to users worldwide, useful for efficiently distributing both static and dynamic web content.
 
-<ul>Email Delivery Service:</ul>
+<h2>Email Delivery Service:</h2>
 
 Amazon SES (Simple Email Service): Implements a service to send summarized news emails to subscribers every morning at 6 AM. SES allows for the reliable sending of mass emails and provides statistics related to email dispatching.
 
-<ul>Revenue Model</ul>
+<h2>Revenue Model</h2>
 
 Subscription Service: Users can subscribe monthly or annually via the website. Subscribers receive summarized news in their email every morning at 6 AM, offering a more in-depth and ad-free experience compared to regular free content.
 This system provides a technologically sophisticated yet user-friendly service, representing a modern way to consume news content. Additionally, by leveraging AWS's robust cloud infrastructure, it allows for a scalable and easily manageable system.
