@@ -25,3 +25,5 @@ Amazon SES (Simple Email Service): Implements a service to send summarized news 
 
 Subscription Service: Users can subscribe monthly or annually via the website. Subscribers receive summarized news in their email every morning at 6 AM, offering a more in-depth and ad-free experience compared to regular free content.
 This system provides a technologically sophisticated yet user-friendly service, representing a modern way to consume news content. Additionally, by leveraging AWS's robust cloud infrastructure, it allows for a scalable and easily manageable system.
+
+![This is an image](image.png)
