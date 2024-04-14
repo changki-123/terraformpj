@@ -27,8 +27,7 @@ Subscription Service: Users can subscribe monthly or annually via the website. S
 This system provides a technologically sophisticated yet user-friendly service, representing a modern way to consume news content. Additionally, by leveraging AWS's robust cloud infrastructure, it allows for a scalable and easily manageable system.
 
 <h1>Architecture</h1>
-![This is an image](image.png)
-
+<img src="image.png" alt="This is an image" />
 
 <hr>
 
@@ -37,20 +36,20 @@ ZooTopic은 다양한 뉴스 소스에서 자동으로 콘텐츠를 수집(크�
 
 <h1>시스템 구성</h1>
 
-<h1>데이터 크롤링:</h1>
+<h2>데이터 크롤링:</h2>
 Python: Python과 함께 Pandas 같은 라이브러리를 사용하여 다양한 뉴스 소스에서 데이터를 자동으로 수집합니다. 이러한 도구는 웹 페이지의 HTML을 파싱하고 필요한 데이터를 추출하는 데 강력합니다.
 
-<h1>데이터 처리 및 저장:</h1>
+<h2>데이터 처리 및 저장:</h2>
 AWS Lambda: 크롤링된 데이터를 처리하고 정제하는 서버리스 함수를 구현합니다. Lambda는 이벤트 기반으로 작동하며, 크롤링 작업 완료 후 트리거되어 처리 과정을 자동화합니다.
 AWS S3: 정제된 데이터를 안전하게 저장하기 위한 객체 스토리지 서비스입니다. S3는 높은 내구성을 제공하며 크롤링된 뉴스 데이터의 백업 및 아카이빙에 이상적입니다.
 
-<h1>웹사이트 배포 및 관리:</h1>
+<h2>웹사이트 배포 및 관리:</h2>
 Amazon Route 53: 도메인 이름 시스템(DNS) 서비스를 제공하여 웹사이트의 도메인을 관리하고 트래픽 라우팅을 최적화합니다.
 Amazon CloudFront: 콘텐츠 전송 네트워크(CDN) 서비스를 사용하여 전 세계 사용자에게 빠른 콘텐츠 로딩 속도를 제공합니다. 이는 정적 및 동적 웹 콘텐츠를 효율적으로 배포하는 데 유용합니다.
 
-<h1>이메일 전송 서비스:</h1>
+<h2>이메일 전송 서비스:</h2>
 Amazon SES (Simple Email Service): 구독자에게 매일 아침 6시에 뉴스 요약을 이메일로 전송하는 서비스를 구현합니다. SES를 사용하면 대량의 이메일을 안정적으로 발송할 수 있으며, 이메일 전송 관련 통계도 제공받을 수 있습니다.
 
-<h1>수익 모델</h1>
+<h2>수익 모델</h2>
 구독 서비스: 사용자는 웹사이트에서 월별 또는 연간 구독을 신청할 수 있습니다. 구독자는 매일 아침 6시에 요약된 뉴스를 이메일로 받게 되며, 이는 일반적인 무료 콘텐츠보다 더 심층적이고 광고가 없는 경험을 제공할 수 있습니다.
 이러한 시스템은 기술적으로 세련되면서도 사용자에게 매우 편리한 서비스를 제공하는 방식으로, 뉴스 콘텐츠를 소비하는 현대적인 방법을 대변합니다. 또한, AWS의 강력한 클라우드 인프라를 활용함으로써 확장성이 뛰어나고 관리가 용이한 시스템을 구축할 수 있습니다.
